@@ -17,18 +17,23 @@ while True:
         cpu_value = random.choice(game_options)
         if user_input == "R" and cpu_value == "S":
             print("You have won and the CPU has lost")
+            print(f"Player ({user_input}): CPU ({cpu_value})")
             break
         elif user_input == "P" and cpu_value == "R":
             print("You have won and the CPU has lost")
+            print(f"Player ({user_input}): CPU ({cpu_value})")
             break
         elif user_input == "S" and cpu_value == "P":
             print("You have won and the CPU has lost")
+            print(f"Player {user_input}: CPU ({cpu_value})")
             break
         elif user_input == cpu_value:
             print("There is a tie")
             user_input = input('pick an option between R, P & S \n'+ 'R for Rock, P for Paper and S for scissors: ')
+            print(f"Player ({user_input}): CPU ({cpu_value})")
         else:
             print("CPU has won")
+            print(f"Player ({user_input}): CPU ({cpu_value})")
             break
 
         
